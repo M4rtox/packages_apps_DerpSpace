@@ -67,6 +67,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import com.derp.support.colorpicker.ColorPickerPreference;
+import com.derp.support.preferences.SecureSettingSwitchPreference;
 
 @SearchIndexable
 public class MonetEngine extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
@@ -76,6 +77,7 @@ public class MonetEngine extends SettingsPreferenceFragment implements OnPrefere
     private Context mContext;
 
     private ColorPickerPreference mMonetColor;
+    private SecureSettingSwitchPreference mBlackTheme, mNusantaraClearTheme;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -94,6 +96,17 @@ public class MonetEngine extends SettingsPreferenceFragment implements OnPrefere
         mMonetColor.setNewPreviewColor(intColor);
         mMonetColor.setSummary(hexColor);
         mMonetColor.setOnPreferenceChangeListener(this);
+
+        mBlackTheme = (SecureSettingSwitchPreference) findPreference("system_black_theme");
+        mNusantaraClearTheme = (SecureSettingSwitchPreference) findPreference("system_nusantara_theme");
+        if (mBlackTheme.isChecked()) {
+            mNusantaraClearTheme.setEnabled(false);
+        } else if (mNusantaraClearTheme.isChecked()) {
+        	mBlackTheme.setEnabled(false);
+        } else {
+        	mNusantaraClearTheme.setEnabled(true);
+            mBlackTheme.setEnabled(true);
+        }
     }
 
     @Override

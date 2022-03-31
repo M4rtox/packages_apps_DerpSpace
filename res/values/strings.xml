@@ -800,4 +800,8 @@
     <string name="dynamic_system_bars_gradient_summary">Overlay a gradient on the status bar</string>
     <string name="dynamic_system_bars_gradient_title">Status bar gradient</string>
 
+    <!-- Nusantara Clear theme -->
+    <string name="nusantara_clear_theme_title">Clear theme</string>
+    <string name="nusantara_clear_theme_summary">Use clear as base of theme</string>
+
 </resources>
