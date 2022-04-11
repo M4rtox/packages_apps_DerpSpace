@@ -43,6 +43,12 @@
         android:title="@string/theme_customization_category">
 
         <Preference
+            android:key="dynamic_system_bars"
+            android:title="@string/dynamic_system_bars_category_title"
+            android:summary="@string/dynamic_system_bars_category_summary"
+            android:fragment="org.derpfest.derpspace.fragments.DsbSettings" />
+
+        <Preference
             android:key="android.theme.customization.fonts"
             android:title="@string/theme_customization_font_title"
             android:summary="@string/theme_customization_font_summary"
