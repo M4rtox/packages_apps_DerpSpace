@@ -804,4 +804,15 @@
     <string name="nusantara_clear_theme_title">Clear theme</string>
     <string name="nusantara_clear_theme_summary">Use clear as base of theme</string>
 
+    <!-- Blur Notification Panels -->
+    <string name="blur_style_category_title">Blur style</string>
+    <string name="blur_style_category_summary">Use blur background</string>
+    <string name="blur_style_title">Blur Style</string>
+    <string name="blur_style_summary_on">Blur enabled</string>
+    <string name="blur_style_summary_off">Blur disabled</string>
+    <string name="blur_radius_title">Blur radius</string>
+    <string name="blur_scale_title">Blur Scale</string>
+    <string name="combined_blur_title">Combined blur</string>
+    <string name="combined_blur_summary">Combine blur with original notification panel background</string>
+
 </resources>
