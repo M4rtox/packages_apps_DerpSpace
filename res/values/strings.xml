@@ -813,6 +813,6 @@
     <string name="blur_radius_title">Blur radius</string>
     <string name="blur_scale_title">Blur Scale</string>
     <string name="combined_blur_title">Combined blur</string>
-    <string name="combined_blur_summary">Combine blur with original notification panel background</string>
+    <string name="combined_blur_summary">Combine blur with original background colors</string>
 
 </resources>
