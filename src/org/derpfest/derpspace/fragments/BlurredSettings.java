@@ -112,7 +112,7 @@ implements Preference.OnPreferenceChangeListener {
             boolean value = (Boolean) newValue;
             Settings.System.putIntForUser(resolver,
                 KEY_BLUR_STYLE, value ? 1 : 0, UserHandle.USER_CURRENT);
-            derpUtils.showSettingsRestartDialog(getContext());
+            derpUtils.showSystemUiRestartDialog(getContext());
             updatePrefAll();
             return true;
         } else if (preference == mBlurRadius) {
@@ -131,7 +131,7 @@ implements Preference.OnPreferenceChangeListener {
             boolean value = (Boolean) newValue;
             Settings.System.putIntForUser(resolver,
                 KEY_BLUR_COMBINED, value ? 1 : 0, UserHandle.USER_CURRENT);
-            UtilsNad.showSettingsRestartDialog(getContext());
+            derpUtils.showSystemUiRestartDialog(getContext());
             updatePrefAll();
             return true;
         }
