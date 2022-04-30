@@ -750,4 +750,8 @@
     <string name="qs_footer_datausage_title">Datenverbrauch</string>
     <string name="qs_footer_datausage_summary">Zusammenfassung der Datennutzung in der Fußzeile der Schnelleinstellungen anzeigen</string>
 
+    <!-- Qs Transparency -->
+    <string name="qs_transparency_summary">Transparenz der Schnelleinstellungen (erfordert SystemUI-Neustart)</string>
+    <string name="qs_transparency_title">QS-Transparenz</string>
+
 </resources>

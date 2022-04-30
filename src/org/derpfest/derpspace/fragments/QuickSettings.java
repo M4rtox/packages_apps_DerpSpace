@@ -54,6 +54,7 @@ import com.android.settingslib.search.SearchIndexable;
 
 import com.android.internal.util.derp.derpUtils;
 
+import com.derp.support.preferences.SystemSettingSeekBarPreference;
 import com.derp.support.preferences.SystemSettingSwitchPreference;
 import com.derp.support.preferences.SystemSettingEditTextPreference;
 
@@ -72,6 +73,7 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
     private static final String KEY_SHOW_BRIGHTNESS_SLIDER = "qs_show_brightness_slider";
     private static final String KEY_BRIGHTNESS_SLIDER_POSITION = "qs_brightness_slider_position";
     private static final String KEY_SHOW_AUTO_BRIGHTNESS = "qs_show_auto_brightness";
+    private static final String QS_TRANSPARENCY = "qs_transparency";
 
     private ListPreference mQuickPulldown;
     private ListPreference mSmartPulldown;
@@ -80,6 +82,7 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
     private SystemSettingSwitchPreference mArtwork;
     private SystemSettingEditTextPreference mFooterString;
     private SwitchPreference mShowAutoBrightness;
+    private SystemSettingSeekBarPreference mQsTransparency;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -138,6 +141,9 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
         mArtwork.setChecked((Settings.System.getInt(resolver,
                 Settings.System.ARTWORK_MEDIA_FORCE_EXPAND, 0) == 1));
         mArtwork.setOnPreferenceChangeListener(this);
+
+        mQsTransparency = (SystemSettingSeekBarPreference) findPreference(QS_TRANSPARENCY);
+        mQsTransparency.setOnPreferenceChangeListener(this);
     }
 
      @Override
@@ -179,6 +185,10 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
             mBrightnessSliderPosition.setEnabled(value > 0);
             if (mShowAutoBrightness != null)
                 mShowAutoBrightness.setEnabled(value > 0);
+            return true;
+        }
+        } else if (preference == mQsTransparency) {
+            derpUtils.showSystemUiRestartDialog(getActivity());
             return true;
         }
         return false;

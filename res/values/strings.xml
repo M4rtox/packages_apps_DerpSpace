@@ -764,4 +764,8 @@
     <string name="qs_footer_datausage_title">Data usage</string>
     <string name="qs_footer_datausage_summary">Display data usage summary in quick settings footer</string>
 
+    <!-- Qs Transparency -->
+    <string name="qs_transparency_summary">Transparency of Quick Settings (Requires SystemUI Restart)</string>
+    <string name="qs_transparency_title">QS Transparency</string>
+
 </resources>
