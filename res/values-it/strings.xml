@@ -23,7 +23,7 @@
     <string name="add">Aggiungi</string>
     <string name="advanced">Avanzate</string>
     <string name="cancel">Elimina</string>
-    <string name="default_text">Default</string>
+    <string name="default_text">Predefinito</string>
     <string name="dlg_ok">OK</string>
     <string name="attention">Attenzione</string>
     <string name="loading">Caricamento\u2026</string>
@@ -155,7 +155,7 @@
     <string name="vowifi_icon_disabled">Icona VoWiFi disabilitata</string>
     <string name="vowifi_icon_enabled_volte_disabled">VoWiFi al posto di icona LTE</string>
     <string name="vowifi_icon_style_title">Stile icona VoWiFi</string>
-    <string name="vowifi_icon_default">Icona Default</string>
+    <string name="vowifi_icon_default">Icona predefinita</string>
     <string name="vowifi_icon_emui">Icona EMUI</string>
     <string name="vowifi_icon_asus">Icona Asus</string>
     <string name="vowifi_icon_oneplus">Icona OOS</string>
@@ -388,9 +388,9 @@
 
     <!-- Status bar - Battery -->
     <string name="status_bar_battery_style_title">Stile batteria</string>
-    <string name="status_bar_battery_style_icon_portrait">Icona verticale (default)</string>
-	<string name="status_bar_battery_style_icon_rlandscape">Icon landscape (Right)</string>
-    <string name="status_bar_battery_style_icon_landscape">Icon landscape (Left)</string>																					   																					 
+    <string name="status_bar_battery_style_icon_portrait">Icona verticale (Predefinito)</string>
+	<string name="status_bar_battery_style_icon_rlandscape">Icon orizzontale (Destra)</string>
+    <string name="status_bar_battery_style_icon_landscape">Icon orizzontale (Sinistra)</string>																					   																					 
     <string name="status_bar_battery_style_circle">Cerchio</string>
     <string name="status_bar_battery_style_dotted_circle">Cerchio (Punteggiato)</string>
     <string name="status_bar_battery_style_filled_circle">Cerchio (Riempito)</string>
@@ -401,7 +401,7 @@
 
     <!-- Status bar - Battery percentage -->
     <string name="status_bar_battery_percentage_title">Percentuale batteria</string>
-    <string name="status_bar_battery_percentage_default">Nascosta (default)</string>
+    <string name="status_bar_battery_percentage_default">Nascosta (Predefinito)</string>
     <string name="status_bar_battery_percentage_text_inside">Dentro l\'icona</string>
     <string name="status_bar_battery_percentage_text_next">Accanto all\'icona</string>  
 
@@ -451,7 +451,7 @@
     <!-- QS footer text -->
     <string name="qs_footer_text_show_title">Mostra testo footer impostazioni rapide</string>
     <string name="qs_footer_text_string_title">Personalizza testo footer</string>
-    <string name="qs_footer_text_string_summary">Imposta vuoto per default #StayDerped</string>
+    <string name="qs_footer_text_string_summary">Imposta vuoto come predefinito #StayDerped</string>
 
     <!-- Combined signal icons in status bar -->
     <string name="combined_status_bar_signal_icons">Icone di segnale combinate</string>
@@ -476,7 +476,7 @@
     <string name="flashlight_on_call_rate_summary">Frequenza lampeggiamento torcia su chiamata</string>
 
     <!-- AOD Schedule -->
-    <string name="default_string">Default</string>
+    <string name="default_string">Predefinito</string>
     <string name="disabled">Disabilitato</string>
     <string name="always_on_display_schedule_title">Pianificazione always on display</string>
     <string name="always_on_display_schedule_sunset">Tramonto</string>
@@ -634,7 +634,7 @@
     <string name="theme_customization_icon_pack_summary">Imposta un pacchetto icone personalizzato</string>
 
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Label for the option that turns off customizations for a given category.-->
-    <string name="theme_customization_device_default">Default da dispositivo</string>
+    <string name="theme_customization_device_default">Predefinito da dispositivo</string>
 
     <!-- Custom Wi-Fi bar icons -->
     <string name="theme_customization_wifi_icon_title">Icona Wi-Fi</string>
@@ -646,7 +646,7 @@
 
     <!-- Screen Off animation -->
     <string name="screen_off_animation_title">Animazione schermo spento</string>
-    <string name="screen_off_animation_default">Default</string>
+    <string name="screen_off_animation_default">Predefinito</string>
     <string name="screen_off_animation_crt">CRT</string>
     <string name="screen_off_animation_scale">Scale</string>
 
